@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1>Behind The Scenes</h1>
+<h5>The math and the physics explained.</h5>
+<hr>
+<article class="media content-section">
+	  <div class="media-body">
+	    <h2><a class="article-title" href="{{ url_for('physics_exp')}}">Physics</a></h2>
+	    <p class="article-content">Understand how the physics of red-shifting and blue-shifting works (doppler effect).</p>
+	  </div>
+</article>
+
+<article class="media content-section">
+	  <div class="media-body">
+	    <h2><a class="article-title" href="{{ url_for('math_exp' )}}">Math</a></h2>
+	    <p class="article-content">Understnad how the math in digital color spaces and image-manipulation works.</p>
+	  </div>
+</article>
+
+
+
+{% endblock %}

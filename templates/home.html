@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1>Doppler Effect Demonstration</h1>
+<h5>Math and Physics Art-Integration Project</h5>
+<hr>
+<article class="media content-section">
+	<div class="media-body">
+		<h2 class="article-title">About</h2>
+		<p class="article-content">The purpose of this web-application is to better understand the concepts of the Doppler effect, primarily; red-shifting and blue-shifting, and comes under Electromagnetic Waves. 
+			It achieves it's purpose by taking user-desired images and visualizing how they would appear if they were moving towards or away from the observer at a high velocity.
+		The back-end of the application also uses the mathematical concept of Matricies, as it deals with manipulation of images using digital color-spaces which is similar to multidimenssional calculations.</p>
+
+
+	  <div class="media-body">
+	    <h4>Go to the tool: <a class="article-title" href="{{ url_for('tool') }}">Demonstration</a></h4>
+	  </div>
+
+
+	  <div class="media-body">
+	    <h4>Understand the science: <a class="article-title" href="{{ url_for('exp') }}">Explanation</a></h4>
+	  </div>
+	</div>
+</article>
+<hr>
+
+
+
+
+{% endblock %}

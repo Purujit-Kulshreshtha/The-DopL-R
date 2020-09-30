@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1 class="border-bottom mb-4">Demonstration</h1>
+
+<article class="media content-section">
+	  <div class="media-body">
+	    <h2><a class="article-title" href="{{ url_for('browse_loaded') }}">Pre-loaded Gallery</a></h2>
+	    <p class="article-content">Interact with an array of images available in our system.</p>
+	  </div>
+</article>
+
+<article class="media content-section">
+	  <div class="media-body">
+	    <h2><a class="article-title" href="{{ url_for('upload_play') }}">Upload Image</a></h2>
+	    <p class="article-content">Upload an image and play with it using the tools.</p>
+	  </div>
+</article>
+
+<article class="media content-section">
+	  <div class="media-body">
+	    <h2><a class="article-title" href="{{ url_for('live_camera') }}">Live Camera</a></h2>
+	    <p class="article-content">Use your device camera as image input.</p>
+	  </div>
+</article>
+
+{% endblock %}

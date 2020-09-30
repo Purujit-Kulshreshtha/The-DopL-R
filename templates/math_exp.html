@@ -1,0 +1,95 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1>Math</h1>
+<h5>Understnad how the math in digital color spaces and image-manipulation works.</h5>
+<hr>
+
+<article class="media content-section">
+	<div class="media-body">
+		<h2 class = "artilce-title">Image Processing</h2>
+		<h4>Theory</h4>
+		<p class="artilce-content">
+			When it comes to digital image-processing, there's a lot of math involced behind the scenes. An digital image is made of pixels, square like units that store values. These pixels are presented in an order array, like on a graph, thereby creating an image. 
+		</p>
+		<p class="artilce-content">BUT, the pixel can further be broken down into several categories - black and white, colored etc. These subcategories also have individual subdivsions, for example, the color can further be broken down into Hue, Saturation and Value. The task of displaying these images can be done by most modern applications but if one has to process the image first:
+			<br><br>
+			With 1920 pixels in a row, 1080 pixels in a column, <br>roughly 2 million pixels overall. <br><br>
+		All of the above mentioned subdivions of each of these 2 million pixels has to be modified about 25 times a second, thereby leaving us with 50 million actions every second. </p>
+		<p class="artilce-content">The following matrix equation takes care of all of the above mentioned tasks.
+			<h4>Equation</h4>
+		<img src="{{ url_for('static', filename='eq.png') }}" width="640" height="130">
+		Following are two tables for reference of variable names in the equation.
+		</p>
+		<h4>Matrix - I</h4>
+		<table>
+			<tr>
+				<th>Variable</th>
+				<th>Meaning</th>
+			</tr>
+			<tr>
+				<td>X-coordinate</td>
+				<td>Represents the initial x-coordinate of the pixel as an integer</td>
+			</tr>
+			<tr>
+				<td>Y-coordinate</td>
+				<td>Represents the initial y-coordinate of the pixel as an integer</td>
+			</tr>
+			<tr>
+				<td>B/W</td>
+				<td>Represents a boolean value (True or False) as to whether or not the image is in Grayscale.</td>
+			</tr>
+			<tr>
+				<td>Hue</td>
+				<td>Represents the initial Hue of the pixel as an integer</td>
+			</tr>
+			<tr>
+				<td>Saturation</td>
+				<td>Represents the initial saturation of the pixel as an integer</td>
+			</tr>
+			<tr>
+				<td>Value</td>
+				<td>Represents the initial value of the pixel as an integer</td>
+			</tr>
+		</table>
+
+		<h4>Matrix -II</h4><br>
+
+		<table>
+			<tr>
+				<th>Variable</th>
+				<th>Meaning</th>
+			</tr>
+			<tr>
+				<td>New_x</td>
+				<td>Represents the new x-coordinate of the pixel as an integer</td>
+			</tr>
+			<tr>
+				<td>New_y</td>
+				<td>Represents the new y-coordinate of the pixel as an integer</td>
+			</tr>
+			<tr>
+				<td>C.space</td>
+				<td>Represents a boolean value (True or False) as to whether or not the image has been converted to Grayscale or a different color-space.</td>
+			</tr>
+			<tr>
+				<td>New.H</td>
+				<td>Represents the new Hue of the pixel as an integer</td>
+			</tr>
+			<tr>
+				<td>New.S</td>
+				<td>Represents the new saturation of the pixel as an integer</td>
+			</tr>
+			<tr>
+				<td>New.V</td>
+				<td>Represents the new value of the pixel as an integer</td>
+			</tr>
+		</table>
+		<br><br><hr><br>
+	</div>
+	
+
+</article>
+
+
+{% endblock %}

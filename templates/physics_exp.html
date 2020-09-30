@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1>Physics</h1>
+<h5>Understand how the physics of red-shifting and blue-shifting works (doppler effect.</h5>
+<hr>
+
+<article class="media content-section">
+	  <div class="media-body">
+	    <h2 class = "artilce-title">The Doppler Effect</h2>
+	    <p class="article-content">The Doppler Effect is the apparent change in the charachteristicks of a wave due to relative motion between the source of the wave and the observer. It can be observed in both, mechanical and electromagnetic waves.</p>
+	    <p class="article-content">
+	    Our universe, probably not the only universe, is constantly expanding, hence; the space in the universe is also expanding. As a result of this expansion, large-scale entitites such as gallaxies, are moving away from each other. </p>
+	    <h4 class = "artilce-title">Red-shifting</h4>
+	    <p class = article-content>When an object is moving away from the observer, the apparent wavelength increases and the frequency decreases. This phenomenon is known as red-shoftomg, as the EM wave moves towards the red side on the color guage.
+	    	<img src = "{{ url_for('static', filename='moving away.png') }}" width = "572" height = "280">
+	    Light from most distant objects in our universe tends to be red-shifted by a large factor - calculations show that some infrared waves that we observe were ultraviolet at the time of formation but have been red-shifted since.
+
+
+	    <h4 class = "artilce-title">Blue-shifting</h4>
+	    <p class = article-content>When an object is moving towards  the observer, the apparent wavelength increases and the frequency decreases. This phenomenon is known as blue-shoftomg, as the EM wave moves towards the blue side on the color guage.
+	    	<img src = "{{ url_for('static', filename='moving towards.png') }}" width = "567" height = "181">
+	    Light from most distant objects in our universe tends to be red-shifted by a large factor - calculations show that some infrared waves that we observe were ultraviolet at the time of formation but have been red-shifted since.
+	  </div>
+</article>
+
+
+
+{% endblock %}
