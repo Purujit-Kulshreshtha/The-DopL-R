@@ -4,8 +4,16 @@
 <h1>Live Camera</h1>
 <h5>Use your device camera as image input.</h5>
 <hr>
+<div id = '#parent'>
+	<div class = 'video' id = 'video_div'>
+		<img id = "video_element" src = "{{ url_for('video') }}">
+	</div>
+	<div id = 'test_div' class = 'test_div'>
+	</div>
+</div>
 
-<img id = "bg" src = "{{ url_for('video') }}" class="video">
+
+
 
 	
 	<div class="slidercon">
