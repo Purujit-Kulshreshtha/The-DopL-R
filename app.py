@@ -65,11 +65,28 @@ def physics_exp():
 def math_exp():
 	return render_template('math_exp.html', title = "Math")
 
+@app.route('/earth_image')
+def earth_image():
+	return render_template('earth_image.html', title = "Earth")
+
+@app.route('/alpha_image')
+def alpha_image():
+	return render_template('alpha_image.html', title = "Alpha Centauri")
+
+@app.route('/haywire_image')
+def haywire_image():
+	return render_template('haywire_image.html', title = "Haywire")
+
+@app.route('/mona_image')
+def mona_image():
+	return render_template('mona_image.html', title = "Mona Lisa")
+
+
+
+
 @app.route('/instructions')
 def instructions():
-	return render_template('instructions.html', title = "Instructions")
-
-
+	return render_template('instructions.html', title = "instructions")
 
 #image pages
 

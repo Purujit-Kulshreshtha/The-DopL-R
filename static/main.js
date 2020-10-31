@@ -3,6 +3,11 @@ var output = document.getElementById('value')
 var video_element = document.getElementById('video_element')
 var test_div = document.getElementById('test_div')
 
+var original_video_width = video_element.getAttribute('width');
+var original_video_height = video_element.getAttribute('height');
+
+video_element.setAttribute('width', 458)
+video_element.setAttribute('height', 342)
 
 slider.oninput = function(){
 	output.innerHTML = 2*(slider.value-50);
@@ -44,7 +49,6 @@ slider.addEventListener("mousemove", function(){
     }
 
     test_div.style.backgroundColor = color_overlay
-
 })
 
 

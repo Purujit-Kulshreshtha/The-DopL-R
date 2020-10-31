@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1>Live Camera</h1>
+{% block header %}{% endblock %}
+<hr>
+<div id = '#parent'>
+	<div class = 'video' id = 'video_div'>
+		{% block source %}{% endblock %}
+	</div>
+	<div id = 'test_div' class = 'test_div'>
+	</div>
+</div>
+
+
+
+
+	
+	<div class="slidercon">
+		<form method="POST" action="#">
+			<p>Please enter velocity as percentage of light-speed.</p>
+			<input type="range" class="slider" min="0" max="100" value="50" id="range" name="level">
+			<p pslider>Value: <span id="value"></span>%</p>
+			
+		</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<hr>
+
+{% endblock %}
