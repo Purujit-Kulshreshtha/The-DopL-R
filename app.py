@@ -50,10 +50,7 @@ def live_camera():
 def gen(camera):
 
 	while True:
-		file = open("level.txt", "r")
-		level = file.read()
-		level = int(level)
-		file.close()
+		level = 0
 		frame = camera.get_frame(level)
 
 		yield (b'--frame\r\n'
